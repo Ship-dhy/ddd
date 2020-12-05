@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/weather_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/smog_day_background"
+    tools:context="chenj.android.spriteweather.WeatherActivity">
+
+    <include layout="@layout/weather_anmi"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/new_area_weather"
+            android:visibility="visible"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:alpha="0.8"
+            app:borderWidth="0dp"
+            app:elevation="3dp"
+            android:src="@drawable/add_weather_floating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/delete_area_weather"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:alpha="0.8"
+            app:borderWidth="0dp"
+            app:elevation="3dp"
+            android:src="@drawable/remove_weather_floating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <android.support.v4.widget.DrawerLayout
+            android:id="@+id/drawlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <!--增加下拉刷新的功能-->
+            <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/weather_swip_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <ScrollView
+                    android:id="@+id/weather_layout"
+                    android:scrollbars="none"
+                    android:overScrollMode="never"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:fitsSystemWindows="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <include layout="@layout/title"/>
+                        <include layout="@layout/now"/>
+                        <include layout="@layout/forecast"/>
+                        <include layout="@layout/aqi"/>
+                        <include layout="@layout/suggest"/>
+                    </LinearLayout>
+
+                </ScrollView>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+            <fragment
+                android:id="@+id/choose_area_fragment"
+                android:name="chenj.android.spriteweather.selectarea.SelectAreaFragment"
+                android:layout_gravity="start|top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></fragment>
+        </android.support.v4.widget.DrawerLayout>
+    </RelativeLayout>
+</FrameLayout>

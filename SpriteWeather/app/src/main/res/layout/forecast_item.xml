@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_margin="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/date_tv"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:layout_width="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+
+    <ImageView
+        android:id="@+id/info_img"
+        android:layout_marginLeft="10dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tmp"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:layout_width="0dp"
+        android:gravity="right"
+        android:layout_gravity="right"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"/>
+
+    <TextView
+        android:id="@+id/wind"
+        android:textSize="12sp"
+        android:textColor="#fff"
+        android:gravity="right"
+        android:layout_width="0dp"
+        android:layout_gravity="right"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"/>
+
+</LinearLayout>

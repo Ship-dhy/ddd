@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">小妖天气</string>
+    <string name="weather_request_key">ebf76947a5774eaa8d6061822c89c6c6</string>
+    <string name="area_request_url">http://guolin.tech/api/china/</string>
+    <string name="testWeatherData">{"HeWeather": [{"aqi":{"city":{"aqi":"82","co":"1","no2":"42","o3":"24","pm10":"0","pm25":"60","qlty":"良","so2":"10"}},"basic":{"city":"合肥","cnty":"中国","id":"CN101220101","lat":"31.8611908","lon":"117.28304291","update":{"loc":"2017-11-17 15:47","utc":"2017-11-17 07:47"}},"daily_forecast":[{"astro":{"mr":"05:14","ms":"16:43","sr":"06:40","ss":"17:11"},"cond":{"code_d":"305","code_n":"305","txt_d":"小雨","txt_n":"小雨"},"date":"2017-11-17","hum":"84","pcpn":"8.3","pop":"67","pres":"1018","tmp":{"max":"17","min":"7"},"uv":"1","vis":"16","wind":{"deg":"351","dir":"北风","sc":"3-4","spd":"22"}},{"astro":{"mr":"06:09","ms":"17:20","sr":"06:41","ss":"17:11"},"cond":{"code_d":"101","code_n":"101","txt_d":"多云","txt_n":"多云"},"date":"2017-11-18","hum":"51","pcpn":"1.5","pop":"58","pres":"1029","tmp":{"max":"11","min":"4"},"uv":"3","vis":"19","wind":{"deg":"7","dir":"北风","sc":"微风","spd":"10"}},{"astro":{"mr":"07:03","ms":"17:59","sr":"06:42","ss":"17:10"},"cond":{"code_d":"101","code_n":"305","txt_d":"多云","txt_n":"小雨"},"date":"2017-11-19","hum":"54","pcpn":"0.1","pop":"79","pres":"1028","tmp":{"max":"10","min":"4"},"uv":"4","vis":"20","wind":{"deg":"355","dir":"北风","sc":"微风","spd":"4"}}],"now":{"cond":{"code":"104","txt":"阴"},"fl":"12","hum":"88","pcpn":"0","pres":"1014","tmp":"15","vis":"10","wind":{"deg":"2","dir":"北风","sc":"微风","spd":"8"}},"status":"ok","suggestion":{"air":{"brf":"良","txt":"气象条件有利于空气污染物稀释、扩散和清除，可在室外正常活动。"},"comf":{"brf":"舒适","txt":"白天不太热也不太冷，风力不大，相信您在这样的天气条件下，应会感到比较清爽和舒适。"},"cw":{"brf":"不宜","txt":"不宜洗车，未来24小时内有雨，如果在此期间洗车，雨水和路上的泥水可能会再次弄脏您的爱车。"},"drsg":{"brf":"较冷","txt":"建议着厚外套加毛衣等服装。年老体弱者宜着大衣、呢外套加羊毛衫。"},"flu":{"brf":"易发","txt":"天冷风力较大且昼夜温差也很大，易发生感冒，请注意适当增减衣服。"},"sport":{"brf":"较不宜","txt":"有降水，且风力较强，气压较低，推荐您在室内进行低强度运动；若坚持户外运动，须注意避雨防风。"},"trav":{"brf":"适宜","txt":"有降水，虽然风稍大，但温度适宜，适宜旅游，可不要错过机会呦！"},"uv":{"brf":"最弱","txt":"属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。"}}}]}
+    </string>
+    
+    <string-array name="weather_codes">
+        <item>100-sunny-0</item>
+        <item>101-clound-1</item>
+        <item>102-small_lound-1</item>
+        <item>103-sunny_clound-1</item>
+        <item>104-sunny_clound-1</item>
+        <item>200-wind-0</item>
+        <item>201-wind-0</item>
+        <item>202-wind-0</item>
+        <item>203-wind-0</item>
+        <item>204-wind-0</item>
+        <item>205-wind-0</item>
+        <item>206-wind-0</item>
+        <item>207-wind-0</item>
+        <item>208-wind-0</item>
+        <item>209-wind-0</item>
+        <item>210-wind-0</item>
+        <item>211-wind-0</item>
+        <item>212-wind-0</item>
+        <item>213-wind-0</item>
+        <item>300-shower_rain-2</item>
+        <item>301-heavy_shower_rain-3</item>
+        <item>302-thunderstorm-0</item>
+        <item>303-heavy_thunderstorm-3</item>
+        <item>304-hail-3</item>
+        <item>305-light_rain-2</item>
+        <item>306-middle_rain-3</item>
+        <item>307-heavy_rain-4</item>
+        <item>308-heavy_rain-4</item>
+        <item>309-light_rain-2</item>
+        <item>310-heavy_rain-4</item>
+        <item>311-heavy_rain-4</item>
+        <item>312-heavy_rain-4</item>
+        <item>313-hail-3</item>
+        <item>400-light_snow-5</item>
+        <item>401-middle_snow-6</item>
+        <item>402-hail-7</item>
+        <item>403-hail-7</item>
+        <item>404-sleet-8</item>
+        <item>405-sleet-8</item>
+        <item>406-sleet-8</item>
+        <item>407-snow_flurry-6</item>
+        <item>500-foggy-9</item>
+        <item>501-foggy-9</item>
+        <item>502-foggy-9</item>
+        <item>503-sand-9</item>
+        <item>504-sand-9</item>
+        <item>507-sand-9</item>
+        <item>508-sand-9</item>
+        <item>900-sand-9</item>
+        <item>901-sand-9</item>
+        <item>999-star-9</item>
+    </string-array>
+</resources>

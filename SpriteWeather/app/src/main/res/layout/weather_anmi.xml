@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:weather="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <chenj.android.spriteweather.compent.animview.CloundView
+        android:id="@+id/clound_anmi"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <chenj.android.spriteweather.compent.animview.RainView
+        android:id="@+id/light_rain_anmi"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        weather:flakeCount="60"
+        weather:minSize="5"
+        weather:maxSize="10"
+        weather:speedX="0"
+        weather:speedY="20"/>
+
+    <chenj.android.spriteweather.compent.animview.RainView
+        android:id="@+id/rain_anmi"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        weather:flakeCount="40"
+        weather:minSize="5"
+        weather:maxSize="30"
+        weather:speedX="0"
+        weather:speedY="40"/>
+
+    <chenj.android.spriteweather.compent.animview.RainView
+        android:id="@+id/heavy_rain_anmi"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        weather:flakeCount="60"
+        weather:minSize="10"
+        weather:maxSize="30"
+        weather:speedX="0"
+        weather:speedY="60"/>
+
+    <chenj.android.spriteweather.compent.animview.SnowView
+        android:id="@+id/light_snow_anmi"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        weather:flakeCount="20"
+        weather:minSize="30"
+        weather:maxSize="40"
+        weather:speedX="0"
+        weather:speedY="10"/>
+
+
+    <chenj.android.spriteweather.compent.animview.SnowView
+        android:id="@+id/snow_anmi"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        weather:flakeCount="30"
+        weather:minSize="50"
+        weather:maxSize="70"
+        weather:speedX="0"
+        weather:speedY="10"/>
+
+
+    <chenj.android.spriteweather.compent.animview.SnowView
+        android:id="@+id/heavy_snow_anmi"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        weather:flakeCount="40"
+        weather:minSize="70"
+        weather:maxSize="100"
+        weather:speedX="0"
+        weather:speedY="10"/>
+</FrameLayout>
